@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		494ACED01AE99F9500716E8A /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494ACECF1AE99F9500716E8A /* Calculator.swift */; };
+		494ACED21AE9A3FE00716E8A /* ConversorCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494ACED11AE9A3FE00716E8A /* ConversorCViewController.swift */; };
 		496787951AE97EDF00185828 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496787941AE97EDF00185828 /* AppDelegate.swift */; };
-		496787971AE97EDF00185828 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496787961AE97EDF00185828 /* ViewController.swift */; };
 		4967879A1AE97EDF00185828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496787981AE97EDF00185828 /* Main.storyboard */; };
 		4967879C1AE97EDF00185828 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4967879B1AE97EDF00185828 /* Images.xcassets */; };
 		4967879F1AE97EDF00185828 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4967879D1AE97EDF00185828 /* LaunchScreen.xib */; };
 		496787AB1AE97EDF00185828 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496787AA1AE97EDF00185828 /* CalculatorTests.swift */; };
+		496787BD1AE9871C00185828 /* CalculatorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496787BC1AE9871C00185828 /* CalculatorTableViewController.swift */; };
+		496787C51AE996E600185828 /* ConversorCalcuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496787C41AE996E600185828 /* ConversorCalcuTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +29,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		494ACECF1AE99F9500716E8A /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		494ACED11AE9A3FE00716E8A /* ConversorCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversorCViewController.swift; sourceTree = "<group>"; };
 		4967878F1AE97EDF00185828 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		496787931AE97EDF00185828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		496787941AE97EDF00185828 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		496787961AE97EDF00185828 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		496787991AE97EDF00185828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4967879B1AE97EDF00185828 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4967879E1AE97EDF00185828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		496787A41AE97EDF00185828 /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		496787A91AE97EDF00185828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		496787AA1AE97EDF00185828 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
+		496787BC1AE9871C00185828 /* CalculatorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorTableViewController.swift; sourceTree = "<group>"; };
+		496787C41AE996E600185828 /* ConversorCalcuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversorCalcuTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		494ACECE1AE99F7000716E8A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				494ACECF1AE99F9500716E8A /* Calculator.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		496787861AE97EDF00185828 = {
 			isa = PBXGroup;
 			children = (
@@ -77,8 +91,10 @@
 		496787911AE97EDF00185828 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				494ACECE1AE99F7000716E8A /* Classes */,
+				496787C31AE996B600185828 /* Cells */,
+				496787B41AE97F1700185828 /* ViewController */,
 				496787941AE97EDF00185828 /* AppDelegate.swift */,
-				496787961AE97EDF00185828 /* ViewController.swift */,
 				496787981AE97EDF00185828 /* Main.storyboard */,
 				4967879B1AE97EDF00185828 /* Images.xcassets */,
 				4967879D1AE97EDF00185828 /* LaunchScreen.xib */,
@@ -110,6 +126,23 @@
 				496787A91AE97EDF00185828 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		496787B41AE97F1700185828 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				496787BC1AE9871C00185828 /* CalculatorTableViewController.swift */,
+				494ACED11AE9A3FE00716E8A /* ConversorCViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		496787C31AE996B600185828 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				496787C41AE996E600185828 /* ConversorCalcuTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +245,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				496787971AE97EDF00185828 /* ViewController.swift in Sources */,
+				496787C51AE996E600185828 /* ConversorCalcuTableViewCell.swift in Sources */,
+				496787BD1AE9871C00185828 /* CalculatorTableViewController.swift in Sources */,
+				494ACED01AE99F9500716E8A /* Calculator.swift in Sources */,
+				494ACED21AE9A3FE00716E8A /* ConversorCViewController.swift in Sources */,
 				496787951AE97EDF00185828 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +445,7 @@
 				496787B01AE97EDF00185828 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		496787B11AE97EDF00185828 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +454,7 @@
 				496787B31AE97EDF00185828 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
